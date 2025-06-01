@@ -1,19 +1,108 @@
-/* charity: water Brand Colors & Fonts
+:root {
+  --primary-blue: #0077B6;
+  --secondary-blue: #00B4D8;
+  --deep-navy: #023047;
+  --text-color: #333;
+  --font-heading: 'Libre Baskerville', serif;
+  --font-body: 'Bricolage Grotesque', sans-serif;
+}
 
-Primary Colors:
-- Yellow:     #FFC907
-- Blue:       #2E9DF7
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text-color);
+  line-height: 1.6;
+  background-color: #fff;
+}
 
-Secondary Colors:
-- Light Blue: #8BD1CB
-- Green:      #4FCB53
-- Orange:     #FF902A
-- Red:        #F5402C
-- Dark Green: #159A48
-- Pink:       #F16061
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  margin-bottom: 0.5rem;
+}
 
-Fonts:
-- Proxima Nova
-- Avenir
+section {
+  padding: 2rem;
+  text-align: center;
+}
 
-*/
+.hero {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--secondary-blue);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: var(--deep-navy);
+}
+
+.cta-button.alt {
+  background-color: var(--primary-blue);
+}
+
+.impact blockquote {
+  font-style: italic;
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.column {
+  flex: 1 1 250px;
+  background: #f0f4f8;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.mission {
+  background-color: #f9f9f9;
+}
+
+.mission-block {
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  background: var(--deep-navy);
+  color: white;
+  padding: 1rem;
+}
+
+footer .socials a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .columns {
+    flex-direction: column;
+  }
+}
