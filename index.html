@@ -1,33 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Charity Water Landing Page</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity: Water Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Bricolage+Grotesque:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Hero Section -->
   <section class="hero">
-    <h1>The Shapers of Tomorrow. The Creators of Hope.</h1>
-    <p>College students are shaping tomorrow by bringing clean water to families in need—join the movement.</p>
-    <a href="#donate" class="cta-button">Donate Now</a>
+    <video class="hero-video" src="img/hero.mp4" autoplay muted loop playsinline></video>
+    <div class="overlay"></div>
+    <img src="img/Water Well Vector Blue.png" alt="Charity: Water Logo" class="logo" />
+    <div class="hero-text">
+      <h1>The Shapers of Tomorrow. The Creators of Hope.</h1>
+      <p class="hero-subtitle">A campaign by <span class="charity-water">charity:water</span></p>
+      <p>College students are shaping tomorrow by bringing clean water to families in need—join the movement.</p>
+    </div>
   </section>
 
-  <!-- Story Section -->
-  <section class="story">
-    <h2>Real Impact</h2>
-    <p>Your support helps build clean water wells and transform communities.</p>
-    <img src="images/hero-photo.jpg" alt="Water Well Project">
-  </section>
+  <section class="impact">
+  <div class="impact-content">
+    <h2>Impact Stories</h2>
+    <p class="intro">Your support brings clean water to those in need and empowers communities around the world.</p>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>“I’m beyond grateful for the clean water that has transformed our daily life. It’s not just about water—it’s about dignity and hope.”</p>
+        <span>— Amina, Local Resident</span>
+      </div>
+      <div class="testimonial">
+        <p>“Being part of this project showed me that change starts with us. Together, we’re making a real impact.”</p>
+        <span>— Emma, Student Volunteer</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Call-to-Action Section -->
-  <section class="cta">
-    <h2>Join the Movement</h2>
-    <p>Together, we’re creating lasting change—one drop at a time.</p>
-    <a href="#donate" class="cta-button">Donate Now</a>
-  </section>
+<section class="stories-of-change">
+  <div class="section-content">
+    <h2>Stories of Change in Action</h2>
+    <p class="intro">See how your support empowers college students and communities to bring clean water and dignity to families in need.</p>
+
+    <div class="stories-videos">
+      <div class="story">
+        <video src="img/college students.mp4" autoplay muted loop playsinline class="story-video"></video>
+        <p>Your support empowers college students like Jordan to make a tangible impact in communities worldwide—creating access to clean water and hope for tomorrow.</p>
+        <a href="#" class="button">See How You Can Help</a>
+      </div>
+
+      <div class="story">
+        <video src="img/water for family.mp4" autoplay muted loop playsinline class="story-video"></video>
+        <p>Through collective effort and real-world action, together we bring clean water and dignity to families in need.</p>
+        <a href="#" class="button">Learn More About Our Mission</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="get-involved">
+  <div class="get-involved-content">
+    <h2>Get Involved</h2>
+    <p class="intro">Join our mission to bring clean water to those in need—your involvement matters.</p>
+    <div class="get-involved-grid">
+
+      <!-- Donate -->
+      <div class="get-involved-item">
+        <span class="material-icons icon">volunteer_activism</span>
+        <h3>Donate</h3>
+        <p>Every contribution—no matter how small—makes a life-changing difference for communities in need of clean water.</p>
+        <a href="#" class="btn">Donate</a>
+      </div>
+
+      <!-- Volunteer -->
+      <div class="get-involved-item">
+        <span class="material-icons icon">diversity_3</span>
+        <h3>Volunteer</h3>
+        <p>Join us in outreach and advocacy efforts on your campus. Help us spread the message and create tangible impact.</p>
+        <a href="#" class="btn">Sign Up</a>
+      </div>
+
+      <!-- Spread the Word -->
+      <div class="get-involved-item">
+        <span class="material-icons icon">campaign</span>
+        <h3>Spread the Word</h3>
+        <p>Share our mission with your community and help amplify the voices of those fighting for clean water access.</p>
+        <a href="#" class="btn">Share Page</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="donate">
+  <div class="donate-content">
+    <h2>Donate Here</h2>
+    <p class="intro">Join us in making a difference. Your donation helps bring clean water to families in need.</p>
+
+    <div class="donate-card">
+      <div class="donate-info">
+        <h3>CHARITY GLOBAL INC</h3>
+        <p><span class="raised">$0</span> raised of <span class="goal">$2,500</span> goal</p>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+      <div class="donate-icon">
+        <span class="material-icons">volunteer_activism</span>
+      </div>
+    </div>
+
+    <a href="#" class="btn donate-btn">Donate Now</a>
+  </div>
+</section>
+ 
+<section class="video-section">
+  <video class="background-video" autoplay muted loop playsinline>
+    <source src="img/water tank.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<section class="mission-section">
+  <div class="wave-divider-top">
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path fill="#0077B6" fill-opacity="1" 
+        d="M0,64L48,74.7C96,85,192,107,288,101.3C384,96,480,64,576,69.3C672,75,768,117,864,128C960,139,1056,117,1152,122.7C1248,128,1344,160,1392,176L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+      </path>
+    </svg>
+  </div>
+
+  <div class="mission-container">
+    <div class="mission-item">
+      <h3>Empowering Communities with Clean Water</h3>
+      <p>Every community deserves access to safe, clean water. Through our projects, we provide life-changing solutions that uplift families and foster health and dignity.</p>
+    </div>
+
+    <div class="mission-item">
+      <h3>Championing Access and Equality</h3>
+      <p>We believe in equitable access to clean water for every person. Our work ensures communities can thrive—empowered by the most basic human right: water.</p>
+    </div>
+  </div>
+
+  <div class="wave-divider-bottom">
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path fill="#0077B6" fill-opacity="1" 
+        d="M0,160L48,170.7C96,181,192,203,288,197.3C384,192,480,160,576,165.3C672,171,768,213,864,224C960,235,1056,213,1152,197.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="contact-content">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you. Reach out to us using the info below.</p>
+    <ul>
+      <li><i class="material-icons">call</i> (123) 456-7890</li>
+      <li><i class="material-icons">email</i> hello@charitywater.com</li>
+      <li><i class="material-icons">location_on</i> 123 Anywhere St, Any City, ST 12345</li>
+      <li><i class="material-icons">share</i> 
+         <a href="#">Facebook</a> &nbsp;| <a href="#">Instagram</a>
+      </li>
+    </ul>
+  </div>
+  <div class="contact-image">
+    <img src="img/contact-mail.png" alt="Contact Mail Icon" />
+  </div>
+</section>
+
+
+
+
 
 </body>
 </html>
